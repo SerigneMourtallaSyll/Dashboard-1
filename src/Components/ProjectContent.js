@@ -26,8 +26,8 @@ function ProjectContent() {
               {card.map((elem, index) => (
                 <CardProject key={index} icon={elem.icon} id={elem.id} title={elem.title} description={elem.description} castingNum={elem.castingNum} date={elem.date} />
               ))}
-              <Card style={{ width: '16rem' }} className='last-carte rounded-0 mb-3'>
-                <i class="bi bi-plus-lg fs-1"></i>
+              <Card className=' last-carte rounded-0 mb-3'>
+                <i className="bi bi-plus-lg fs-1" role='button'></i>
                 <p>New project</p>
               </Card>
             </div>

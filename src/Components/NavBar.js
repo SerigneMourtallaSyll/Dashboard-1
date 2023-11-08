@@ -11,7 +11,7 @@ function NavBar() {
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll" className='mx-5'>
                         <Nav
-                            className="me-auto my-2 my-lg-0"
+                            className="me-auto my-2 my-lg-0 nav"
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
@@ -21,22 +21,22 @@ function NavBar() {
                             <Nav.Link href="#action2" className='fs-5 nav-link'>Payouts</Nav.Link>
                             <Nav.Link href="#action2" className='fs-5 nav-link'>Team</Nav.Link>
                         </Nav>
-                        <Form className="d-flex">
-                            <Form.Control
-                                type="search"
-                                placeholder="Search"
-                                className="me-2 rounded-pill"
-                                aria-label="Search"
-                            />
-                            <div className="d-flex justify-content-center align-items-center">
-                                <i class="bi bi-search" role="button"></i>
+                        <div className='d-flex justify-content-center align-items-center'>
+                            <Form className="d-flex">
+                                <Form.Control
+                                    type="search"
+                                    placeholder="Search"
+                                    className="me-2 rounded-pill h-75"
+                                    aria-label="Search"
+                                />
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-search" role="button"></i>
+                                </div>
+                            </Form>
+                            <h6 className='text-white bg-info mx-3 rounded py-2 px-3'>3</h6>
+                            <div className='mx-3'>
+                                <img src={imageProfil} alt="img"  className='rounded-circle'/>
                             </div>
-                        </Form>
-                        <div className='bg-info mx-3 rounded py-2 px-3'>
-                            <h6 className='text-white'>3</h6>
-                        </div>
-                        <div className='mx-3'>
-                            <img src={imageProfil} alt="img"  className='rounded-circle'/>
                         </div>
                     </Navbar.Collapse>
                 </Container>

@@ -59,6 +59,12 @@
   /* transition: 1s; */
 }
 
+.navbar h6{
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
 #projects .icon-header{
   display: flex;
   justify-content: center;
@@ -124,10 +130,23 @@
     width: 52%;
     flex-wrap: nowrap;
   }
+
+  #projects .last-carte{
+    width: 16rem;
+  }
 }
 
-/* @media screen and(max-width:648px){
+@media screen and (max-width:500px){
   #projects .completedProject .carteContent{
     flex-wrap: wrap;
   }
-} */
+
+  #projects .last-carte{
+    width: 100%;
+  }
+
+  #projects .carte{
+    width: 100%;
+  }
+
+}
